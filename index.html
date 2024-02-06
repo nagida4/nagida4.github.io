@@ -58,7 +58,18 @@
         a:hover {
             text-decoration: underline;
         }
-        /* 既存のスタイルの後に追加 */
+        section {
+            padding: 20px;
+            margin: auto;
+            background: #fff;
+            width: 80%; /* ここは必要に応じて調整してください */
+            text-align: center;
+        }
+        footer {
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
     　　a {
         　　color: #1a0dab; /* リンクの色 */
     　　}
@@ -69,11 +80,12 @@
 </head>
 <body>
     <header>
-        <h1>ナギのホームページ</h1>
+        <img src="header.png">
     </header>
     
     <nav>
-        <ul>
+    <center>
+    <ul>
             <li><a href="#watashi">私について</a></li>
             <li><a href="#discord">Discord</a></li>
         </ul>
@@ -93,5 +105,6 @@
     <footer>
         <small>&copy; 2024 ナギのホームページ</small>
     </footer>
+    </center>
 </body>
 </html>
