@@ -1,106 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script src="https://kit.fontawesome.com/5dd26e337c.js" crossorigin="anonymous"></script>
-    <link rel=”icon" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lilalmのホームページ(製作中)</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            background: #555;
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: #fff;
-            padding: 5px 20px;
-            display: inline-block;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background: #444;
-        }
-        section {
-            padding: 20px;
-            margin: 0 10px;
-            background: #f4f4f4;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            margin: auto;
-            background: #fff;
-            width: 80%;
-            text-align: center;
-        }
-        footer {
-            padding: 10px;
-            position: relative;
-            width: 100%;
-        }
-        a {
-            color: #0e0bc4;
-        }
-        a:hover {
-            color: #00aeff;
-        }
-        body {
-            font-family: "sans-serif","Arial" ;
-        }
-    </style>
+    <title>新しいタブ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Lilalmのホームページ</h1>
-    </header>
-    
-    <nav>
-    <center>
-    <ul>
-            <li><a href="https://blog.lilalm.site/">ブログ</a></li>
-        </ul>
-    </nav>
-    
-    <center>
-        <h2>Welcome to<br>Lilalm's homepage!</h2>
-        <p>Lilalmのホームページへようこそ！</p>
-    <footer>
-        <small>&copy; 2024 Lilalmのホームページ</small>&emsp;<a href="https://twitter.com/Nagi_t4"><font color="ffffff"><i class="fa-brands fa-twitter"></i></font></a> <a href="https://www.youtube.com/channel/UC-qZ5_AKgfRlJrCUmpdrdDQ"><font color="ffffff"><i class="fa-brands fa-youtube"></i></i></font></a>
-    </footer>
-    </center>
+    <div class="container">
+        <div id="clock" class="clock"></div>
+        <div id="day" class="day"></div>
+        <button id="toggle-mode">ダークモード</button>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="検索..." />
+            <button onclick="search()">検索</button>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        <div class="shortcuts">
+            <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.youtube.com">YouTube</a></li>
+                <li><a href="https://ja.wikipedia.org/">Wikipedia</a></li>
+                <li><a href="https://www.github.com">GitHub</a></li>
+                <li><a href="https://www.wrtn.jp">リートン</a></li>
+            </ul>
+        </div>
+        <div class="calendar">
+            <div id="month-year"></div>
+            <div id="calendar"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
